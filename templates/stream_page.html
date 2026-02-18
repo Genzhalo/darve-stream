@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% include "components/sidebar.html" %}
+<main class="flex-1" id="main-content">
+    <div style="padding: 1.5rem;">
+        <h1 style="font-size: 2rem; margin-bottom: 1.5rem;">Stream</h1>
+        <div class="card">
+            <div class="card-body">
+                <div
+                    style="width: 100%; aspect-ratio: 16/9; background: #000; border-radius: var(--radius-md); margin-bottom: 1.5rem; display: flex; align-items: center; justify-content: center; border: 1px solid var(--border);">
+                    <p class="text-muted">Stream video player will appear here</p>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;">
+                    <div
+                        style="background: var(--bg-input); border-radius: var(--radius-md); padding: 1rem; border: 1px solid var(--border);">
+                        <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 0.5rem;">Status</p>
+                        <p style="color: var(--live); font-weight: 600;">● Live</p>
+                    </div>
+                    <div
+                        style="background: var(--bg-input); border-radius: var(--radius-md); padding: 1rem; border: 1px solid var(--border);">
+                        <p class="text-muted" style="font-size: 0.875rem; margin-bottom: 0.5rem;">Viewers</p>
+                        <p style="color: var(--text-primary); font-weight: 600;">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
